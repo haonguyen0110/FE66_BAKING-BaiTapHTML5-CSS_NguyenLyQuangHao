@@ -1,0 +1,713 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Back to top */
+
+.backToTop{
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+  }
+.backToTop a{
+    opacity: 0;
+}
+.backToTop .cd-top--fade-out {
+    opacity: 1;
+  }
+.backToTop .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.backToTop i{
+    color: #03b3c7;
+}
+/* HEADER */
+
+header{
+    display: flex;
+    align-items: center; /*Can giua theo chieu dung*/
+    justify-content: space-around;
+    background-color: #4e2a84;
+    padding: 2rem 0 ;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+header .brand{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+header nav ul{
+    list-style: none; 
+}
+
+header nav ul li{
+    display: inline;
+    margin: 0 1.5rem;
+}
+
+header nav ul li a {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+header nav ul li a.active{
+    color: #ff0e83;;
+}
+
+header nav ul li a{
+    transition: all 0.6s;
+}
+
+header nav ul li:hover a{
+    color: #ff0e83;;
+}
+
+/* Carousel */
+
+#carousel{
+    background-image: url("../images/b3.jpg") ;
+    height: 58rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+#carousel .carousel__content{
+    text-align: center;
+}
+
+#carousel .carousel__content h1{
+    color: white;
+    font-size: 5rem;
+}
+
+#carousel .carousel__content p{
+    color: #dcdde0;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+#carousel .carousel__content button{
+    background-color: #e35183;
+    padding: 1.5rem 4rem;
+    color: white;
+    border: 1px solid white;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: all 0.5s;
+}
+
+#carousel .carousel__content button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid #e35183;
+    cursor: pointer;
+}
+
+/* ABOUT */
+
+#intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#intro .intro__item{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#intro .intro__item h1{
+    color: white;
+    font-size: 2.5rem;
+}
+
+#intro .intro__item p{
+    color: #dcdde0;
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    letter-spacing: 1.5;
+    line-break: 5px;
+    padding: 0 2rem;
+}
+
+#intro .tradition{
+    background-color: #4e2a84;
+    padding: 0 2rem;
+}
+
+#intro .image__1{
+    grid-column: 2 /span 2;
+}
+
+#intro img{
+    width: 100%;
+}
+
+#intro .creativity{
+    background-color: #e35183;
+}
+
+#intro .thing{
+    background-color: #e35183;
+    grid-column: 1 / span 2;
+}
+
+#intro .quality{
+    background-color: #836eaa;
+}
+
+#intro .image__4{
+    grid-column: 3 / span 2;
+}
+
+/* Count */
+#count{
+    display: flex;
+    justify-content: space-around;
+    padding: 10rem 0;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#count p{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #4e2a84;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+#count h3{
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+}
+
+/* Service */
+#service{
+    text-align: center;
+    background-image: url("./../images/s1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0;
+}
+
+#service h1{
+    font-size: 5rem;
+    color: white;
+    font-weight: 700;
+}
+#service .service__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#service .service__item{
+    padding: 2rem;
+}
+
+#service .service__item h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+#service .service__item p{
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    padding: 1.5rem 0 ;
+}
+
+#service .service__item button{
+    padding: 1.3rem 3rem;
+    background-color: #ff0e83;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+#service .service__item button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid #ff0e83;
+    cursor: pointer;
+}
+#service .service__item i{
+    padding: 1.5rem;
+    border: 1px solid #4f3184;
+    margin: 1.5rem;
+    border-radius: 50%;
+    color: #4f3184;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+#service .service__item i:hover{
+    color: #ff0e83;
+}
+
+/* GALLERY */
+#gallery{
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+#gallery h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+#gallery .gallery__content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+#gallery .gallery__content .gallery__item {
+    position: relative;
+  
+}
+
+#gallery .gallery__content .item__1{
+    grid-column: 1/span 2;
+}
+
+#gallery .gallery__content .item__6{
+    grid-column: 3/span 2;
+}
+#gallery .gallery__content .gallery__item img{
+    width: 100%;
+    height: 100%;
+}
+
+#gallery .gallery__content .gallery__item .item__text{
+    text-align: right;
+    position: absolute;
+    padding: 3rem;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+    
+}
+
+#gallery .gallery__content .gallery__item .item__text h3{
+    font-size: 2.5rem;
+    color: white;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    transform: translateY(10px);
+    transition: all 0.5s;
+}
+
+#gallery .gallery__item:hover .item__text h3{
+    transform: translateY(0);
+}
+
+#gallery .gallery__item:hover {
+    cursor: pointer;
+}
+#gallery .gallery__content .gallery__item .item__text h3::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin-top: 1.2rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+#gallery .gallery__item:hover .item__text h3::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+#gallery .gallery__content .gallery__item .item__text span{
+    font-size: 2.5rem;
+    color: white;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+#gallery .gallery__content .gallery__item .item__text p{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 3rem;
+    transform: translateY(50px);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+#gallery .gallery__item:hover .item__text p{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* BAKE TEAM */
+
+#bake__team {
+   
+    background-color:#4e2a84;
+    padding: 4.5rem 0 ;
+}
+
+#bake__team h1{
+    font-size: 4.3rem;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+#bake__team .team__content{
+   display: flex;
+   flex-wrap: wrap; /* tu xuong dong khi qua 100%*/
+   width: 60%;
+   margin: 0 auto;
+   justify-content: space-around;
+   margin-top: 3rem;
+}
+
+#bake__team .team__item{
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+#bake__team .team__item img{
+    width: 100%;
+}
+
+#bake__team .team__item .item__content{
+    position: absolute;
+    bottom: 0;
+    /* left: 0rem; */
+    color: white;
+    background-color: #ff0e83;
+    width: 100%;
+    padding: 2.5rem 2rem;
+}
+
+#bake__team .team__item .item__content h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+#bake__team .team__item .item__content p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#bake__team .team__item .overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.774);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: left;
+    color: white;
+    padding: 7rem 3rem;
+    opacity: 0;
+}
+
+
+
+#bake__team .overlay ul{
+    list-style: none;
+
+}
+
+#bake__team .overlay li{
+    display: inline;
+    padding: 1rem;
+}
+
+#bake__team .overlay i{
+    padding: 0.5rem;
+    font-size: 1.5em;
+    color: white;
+    border: 1px solid white;
+    margin-top: 1rem;
+}
+
+#bake__team .overlay h3{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    color: #ff0e83;
+}
+
+#bake__team .overlay h4{
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+#bake__team .overlay p{
+    margin: 1rem 0;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+#bake__team .overlay{
+    transition: all 0.8s;
+}
+#bake__team .item__content{
+    transition: all 0.8s;
+}
+#bake__team .team__item:hover .overlay{
+    opacity: 1;
+}
+
+#bake__team .team__item:hover .item__content{
+    opacity: 0;
+}
+
+/* TESTIMONIAL */
+#testimonial{
+    padding: 4.5rem ;
+    background-image: url("./../images/cc1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#testimonial h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+#testimonial .testimonial__content{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#testimonial .testimonial__item{
+    border: 2px solid #ff0e83;
+    padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.582);
+    
+}
+
+#testimonial .testimonial__item p{
+    font-size: 1.5rem;
+}
+
+#testimonial .testimonial__item i{
+    color: #2cbeff;
+    font-size: 2rem;
+}
+
+#testimonial .testimonial__item h3{
+    font-size: 1.5rem;
+    color: white;
+    margin: 2rem 0;
+}
+
+
+#testimonial .owl-dots{
+    margin-top: -4rem;
+}
+
+.clear{
+    clear: both;
+}
+/* CONTACT */
+#contact{
+    margin: 5rem 0;
+}
+
+#contact h1{
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+#contact .row{
+    display: flex;
+    margin: 1rem 0;
+}
+
+#contact .row .col-6{
+    width: 50%;
+    padding: 0 1rem;
+}
+
+#contact .contact__content{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+#contact .form-control{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+#contact .row .col-12{
+    width: 100%;
+    padding: 0 1rem;
+}
+
+#contact .col-12 .btn{
+    width: 100%;
+    padding: 1rem ;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.btn-pink{
+    background-color: #ff0e83;
+}
+
+#contact .col-12 .btn:hover{
+    background-color: black;
+    color: white;
+}
+#contact .phonenum{
+    margin-top: 5rem;
+}
+#contact .phonenum__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#contact .phonenum__item {
+    text-align: center;
+}
+#contact .phonenum__item i{
+    font-size: 2.5rem;
+    color: #4e2a84;
+}
+#contact .phonenum__item p{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 0.3rem;
+}
+
+/* Footer */
+footer{
+    color: white;
+    background-color: black;
+}
+footer .footer__content{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+
+footer .footer__item{
+    width: 100%;
+    padding: 1rem;
+}
+
+footer .footer__item h2{
+    font-size: 2.3rem;
+    color: #ff0e83;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+footer .footer__item a{
+    text-decoration: none;
+}
+
+footer .footer__item p{
+    line-height: 28px;
+    font-size: 14px;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+footer .footer__item ul{
+    list-style: none;
+
+}
+
+footer .footer__item  li{
+    display: inline;
+    margin-right: 1rem;
+}
+
+footer .footer__item  i{
+    padding: 1rem;
+    font-size: 1.5em;
+    color: white;
+    border: 1px solid white;
+    margin-top: 1rem;
+}
+
+footer .footer__item .workingDaily{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px dotted white;
+}
+
+footer input{
+    height: 3.5rem;
+    padding: 1rem;
+    width: 80%;
+}
+
+footer .btn{
+    padding: 0.8rem 2.5rem;
+    margin: 1.5rem 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+footer .coppy{
+    text-align: center;
+    padding: 3rem;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+
+footer .coppy span a{
+    color: #ff0e83;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
